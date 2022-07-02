@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "704358140046",
+    "project_id": "danp-lab",
+    "storage_bucket": "danp-lab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704358140046:android:512521af6121c88373a1df",
+        "android_client_info": {
+          "package_name": "com.example.lab08"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704358140046-9e49c5pri4knqltk6gnrbdml2ss8796i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPyvNrw7m1KvVUgLK6xy_3CZ3yF7hmYW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704358140046-9e49c5pri4knqltk6gnrbdml2ss8796i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
