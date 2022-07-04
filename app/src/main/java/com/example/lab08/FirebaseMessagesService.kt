@@ -27,9 +27,8 @@ class FirebaseMessagesService: FirebaseMessagingService() {
             applicationContext.packageName,
             R.layout.notification
         )
-        remoteViews.setTextViewText(R.id.title, title + "hola")
+        remoteViews.setTextViewText(R.id.title, title)
         remoteViews.setTextViewText(R.id.message, message)
-        remoteViews.setImageViewResource(R.id.icon, R.drawable.ic_launcher_foreground)
         Log.i("GRA", "GRAFIQUE")
         return remoteViews
     }

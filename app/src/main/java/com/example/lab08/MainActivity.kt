@@ -2,6 +2,7 @@ package com.example.lab08
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -29,8 +30,21 @@ import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.messaging.FirebaseMessaging
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //val menos: Button = findViewById(R.id.menos)
+        //val mas: Button = findViewById(R.id.mas)
+
+        var contador=10
+
+        /*menos.setOnClickListener {
+            contador -= 1
+        }
+        mas.setOnClickListener {
+            contador -= 1
+        }*/
         setContent {
             Lab08Theme {
                 // A surface container using the 'background' color from the theme
@@ -86,6 +100,17 @@ class MainActivity : ComponentActivity() {
                                     .height(200.dp)
                                     .padding(15.dp)
                                     .clip(RoundedCornerShape(20.dp))
+                            )
+                            Text(
+                                text = "Contador: "+contador,
+                                color = Color.White,
+                                textAlign = TextAlign.Center,
+                                fontSize = 20.sp,
+                                fontWeight = FontWeight.Bold,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .background(Purple500)
+                                    .padding(15.dp)
                             )
                         }
                     }
